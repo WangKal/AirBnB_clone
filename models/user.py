@@ -1,23 +1,21 @@
-#!/usr/bin/python3
-"""Defines a class User """
+#!/usr/bin/env python3
+"""User Class.
+
+This module contains a class that inherits from the BaseModel class.
+"""
 from models.base_model import BaseModel
 
 
 class User(BaseModel):
-	""" Class of User definition
-		Attrributes:
-		email (string): email
-		password (string) : user password
-		firstname (string) : user first name
-		lastname (string) : user last name
-	"""
+    """Defines the blueprint of the User.
 
+    Attributes:
+        email: string - empty string
+        password: string - empty string
+        first_name: string - empty string
+        last_name: string - empty string
+    """
     email = ""
     password = ""
     first_name = ""
     last_name = ""
-
-    def __init__(self, *args, **kwargs):
-        """New instances of User.
-        """
-        super().__init__(*args, **kwargs)
